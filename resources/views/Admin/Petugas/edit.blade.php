@@ -70,7 +70,7 @@
                     <form action="{{ route('petugas.destroy', $petugas->id_petugas) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button class="btn btn-danger mt-3" style="width: 100%" onclick="confirm('Yakin?')">HAPUS</button>
+                        <button type="submit" class="btn btn-danger mt-3" style="width: 100%" onclick="confirm('Yakin?')">HAPUS</button>
                     </form>
                 </div>
             </div>

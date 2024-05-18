@@ -36,13 +36,11 @@ Route::middleware(['guest'])->group(function() {
     // Register
     Route::get('/register', [UserController::class, 'formRegister'])->name('pekat.formRegister');
     Route::post('/register/auth', [UserController::class, 'register'])->name('pekat.register');
-
 });
 
 Route::prefix('admin')->group(function() {
 
     Route::middleware(['isAdmin'])->group(function() {
-
         // Petugas
         Route::resource('petugas', PetugasController::class);
         

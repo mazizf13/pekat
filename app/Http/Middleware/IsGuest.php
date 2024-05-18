@@ -16,10 +16,10 @@ class IsGuest
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::guard('admin')->check()) {
+        if (!Auth::guard('admin')->check()) {
             return $next($request);
         }
 
-        return redirect()->route('dashborad.index');
+        return redirect()->route('dashboard.index');
     }
 }
