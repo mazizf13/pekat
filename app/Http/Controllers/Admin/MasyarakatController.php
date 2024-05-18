@@ -10,7 +10,7 @@ class MasyarakatController extends Controller
 {
     public function index() {
 
-        $masyarakat =Masyarakat::all();
+        $masyarakat = Masyarakat::all();
 
         return view('Admin.Masyarakat.index', ['masyarakat' => $masyarakat]);
     }

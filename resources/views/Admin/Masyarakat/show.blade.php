@@ -26,7 +26,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
             <div class="card">
                 <div class="card-header">
                     <div class="text-center">

@@ -5,11 +5,11 @@
 @section('css')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 @endsection
-
+        
 @section('header', 'Data Masyarakat')
 
 @section('content')
-    <table id="masyrakatTable" class="table">
+    <table id="masyarakatTable" class="table">
         <thead>
             <tr>
                 <th>No</th>
@@ -29,7 +29,7 @@
                     <td>{{ $v->username }}</td>
                     <td>{{ $v->telp }}</td>
                     <td><a href="{{ route('masyarakat.show', $v->nik) }}" style="text-decoration: underline">Lihat</a></td>
-            </tr>
+                </tr>
             @endforeach
         </tbody>
     </table>
@@ -39,7 +39,7 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#masyrakatTable').DataTable();
+            $('#masyarakatTable').DataTable();
         });
     </script>
 @endsection
